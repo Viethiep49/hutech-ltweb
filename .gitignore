@@ -1,0 +1,17 @@
+# System Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Node / Web (if applicable later)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+.env
