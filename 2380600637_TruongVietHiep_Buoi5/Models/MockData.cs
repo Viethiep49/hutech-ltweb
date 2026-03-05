@@ -20,58 +20,18 @@ namespace _2380600637_TruongVietHiep_Buoi5.Models
                 Author = "Nguyễn Nhật Ánh", 
                 CategoryId = 1, 
                 Price = 61600, 
-                ImageUrl = "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8934974154944_2.jpg",
+                ImageUrl = "https://th.bing.com/th/id/OIP.5F7n17QHU-9D2QsdAtlieAHaHa?w=197&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
                 Description = "Truyện đưa người đọc trở về tuổi thơ tinh nghịch với những cái nhìn đời ngộ nghĩnh của lũ trẻ."
             },
             new Book 
             { 
                 Id = 2, 
-                Title = "Tôi Thấy Hoa Vàng Trên Cỏ Xanh", 
+                Title = "Cuộc Sống Rất Giống Cuộc Đời", 
                 Author = "Nguyễn Nhật Ánh", 
                 CategoryId = 1, 
                 Price = 75000, 
-                ImageUrl = "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8934974154937.jpg",
-                Description = "Câu chuyện tuổi thơ đầy xúc động, mộc mạc và chân thành."
-            },
-            new Book 
-            { 
-                Id = 3, 
-                Title = "Mắt Biếc", 
-                Author = "Nguyễn Nhật Ánh", 
-                CategoryId = 1, 
-                Price = 85000, 
-                ImageUrl = "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8934974154951.jpg",
-                Description = "Câu chuyện tình buồn lãng mạn và đầy trắc trở."
-            },
-            new Book 
-            { 
-                Id = 4, 
-                Title = "Bảy Bước Tới Mùa Hè", 
-                Author = "Nguyễn Nhật Ánh", 
-                CategoryId = 1, 
-                Price = 72000, 
-                ImageUrl = "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_45260.jpg",
-                Description = "Câu chuyện vui nhộn học trò ở một làng quê."
-            },
-            new Book 
-            { 
-                Id = 5, 
-                Title = "Java Core Fundamentals", 
-                Author = "Oracle Press", 
-                CategoryId = 2, 
-                Price = 250000, 
-                ImageUrl = "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9781260463415_1.jpg",
-                Description = "Comprehensive guide to Java."
-            },
-            new Book 
-            { 
-                Id = 6, 
-                Title = "ASP.NET Core MVC In Action", 
-                Author = "Andrew Lock", 
-                CategoryId = 2, 
-                Price = 300000, 
-                ImageUrl = "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9781617298301.jpg",
-                Description = "A complete resource for ASP.NET Core MVC."
+                ImageUrl = "https://lh3.googleusercontent.com/VVQ6cnql29pO91fpDzYO2zoEw9Ro-nzEMTV2hqpAb5H5kjtWa6bQap9PnOT03CJ6J2qs1XzMuNGKGdniSsw1hg24RMfk4ZbKgZ2OxeFPypUPeTpiWsmB7xLG5_P1YRN1D-RmNkw",
+                Description = "Đàn ông tuổi 15 mơ ước thành đàn ông tuổi 20..."
             }
         };
     }
