@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Cửa Hàng Sách ASM5</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        .custom-navbar {
+            background-color: #333333;
+        }
+
+        .custom-navbar .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .custom-navbar .nav-link {
+            color: #cccccc;
+        }
+        
+        .custom-navbar .nav-link:hover {
+            color: #ffffff;
+        }
+
+        .sidebar-title {
+            color: #333;
+            font-weight: normal;
+        }
+
+        .main-content-area {
+            padding-left: 20px;
+            border-left: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm custom-navbar mb-4">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" asp-area="" asp-controller="Book" asp-action="Index">Trang Chủ</a>
+                
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluid px-5">
+        <div class="row">
+            <!-- Sidebar Area -->
+            <div class="col-md-2">
+                <h3 class="sidebar-title mb-4">Chủ đề</h3>
+                <!-- View Component Call -->
+                @await Component.InvokeAsync("CategorySidebar")
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-md-10 main-content-area">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container text-center py-4">
+            &copy; 2023 - Lập trình Web
+        </div>
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
