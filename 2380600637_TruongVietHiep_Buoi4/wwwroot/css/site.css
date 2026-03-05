@@ -1,0 +1,83 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.custom-container {
+  border: 4px solid #b79cc7;
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.custom-container header {
+  background-color: #f7ebff;
+  border-bottom: 4px solid #b79cc7;
+  padding: 20px 0;
+}
+
+.custom-container header h1 {
+  color: #ee204d; /* Reddish pink title */
+  font-size: 24px;
+}
+
+.custom-container header h4 {
+  color: #333;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.custom-container main {
+  padding: 30px;
+  text-align: center;
+}
+
+.custom-container main h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table th {
+  border-bottom: 2px solid #ddd;
+}
+
+.table td, .table th {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.custom-footer {
+  background-color: #b79cc7;
+  height: 20px;
+  width: 100%;
+}
+
+/* Align form content center */
+.row {
+    justify-content: center;
+}
+
+.form-group.text-start {
+    text-align: left;
+}

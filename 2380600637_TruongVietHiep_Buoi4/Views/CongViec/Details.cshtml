@@ -1,0 +1,38 @@
+@model _2380600637_TruongVietHiep_Buoi4.Models.CongViec
+
+@{
+    ViewData["Title"] = "Chi tiết công việc";
+}
+
+<div class="container mt-4">
+    <h2>Chi tiết công việc</h2>
+    <hr />
+    
+    <div>
+        <dl class="row">
+            <dt class="col-sm-3">
+                Mã công việc
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Id)
+            </dd>
+            <dt class="col-sm-3">
+                Tên công việc
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.TenCongViec)
+            </dd>
+            <dt class="col-sm-3">
+                Trạng thái hoàn thành
+            </dt>
+            <dd class="col-sm-9">
+                <input type="checkbox" disabled="disabled" @(Model.TrangThaiHoanThanh ? "checked" : "") />
+            </dd>
+        </dl>
+    </div>
+    
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Sửa</a> |
+        <a asp-action="Index">Quay trở lại</a>
+    </div>
+</div>
