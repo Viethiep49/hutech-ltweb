@@ -96,3 +96,4 @@ C:\Users\Admin\source\repos\hutech-ltweb\2380600637_TruongVietHiep_Buoi5\obj\Deb
 C:\Users\Admin\source\repos\hutech-ltweb\2380600637_TruongVietHiep_Buoi5\obj\Debug\net10.0\2380600637_TruongVietHiep_Buoi5.pdb
 C:\Users\Admin\source\repos\hutech-ltweb\2380600637_TruongVietHiep_Buoi5\obj\Debug\net10.0\2380600637_TruongVietHiep_Buoi5.genruntimeconfig.cache
 C:\Users\Admin\source\repos\hutech-ltweb\2380600637_TruongVietHiep_Buoi5\obj\Debug\net10.0\ref\2380600637_TruongVietHiep_Buoi5.dll
+C:\Users\Admin\source\repos\hutech-ltweb\2380600637_TruongVietHiep_Buoi5\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
