@@ -1,0 +1,32 @@
+@model thuongmaidientu.Models.Category
+
+@{
+    ViewData["Title"] = "Admin: Xác nhận xóa danh mục";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-danger shadow">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0"><i class="bi bi-exclamation-triangle"></i> Cảnh báo nguy hiểm</h4>
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title text-danger">Xóa danh mục: @Model.Name</h5>
+                    <p class="card-text mt-3">
+                        <strong>CHÚ Ý:</strong> Khi bạn xóa danh mục này, <strong>TẤT CẢ</strong> các sản phẩm thuộc danh mục 
+                        <span class="badge bg-warning text-dark">@Model.Name</span> sẽ bị xóa vĩnh viễn khỏi hệ thống!
+                    </p>
+                    <hr />
+                    <form asp-area="Admin" asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-center mt-4">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">Bỏ qua</a>
+                            <button type="submit" class="btn btn-danger px-5">Xác nhận xóa tất cả</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
