@@ -1,0 +1,40 @@
+@model IEnumerable<thuongmaidientu.Models.Category>
+
+@{
+    ViewData["Title"] = "Admin: Quản lý danh mục";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="display-5 text-danger">@ViewData["Title"]</h1>
+        <a asp-area="Admin" asp-action="Create" class="btn btn-danger">
+            <i class="bi bi-plus-circle"></i> Thêm mới danh mục
+        </a>
+    </div>
+
+    <div class="alert alert-warning">
+        <i class="bi bi-info-circle"></i> Lưu ý: Khi xóa danh mục, tất cả sản phẩm thuộc danh mục này sẽ bị xóa theo (Cascade Delete).
+    </div>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Tên danh mục</th>
+                <th class="text-center">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+@foreach (var item in Model) {
+            <tr>
+                <td class="align-middle fw-bold">@item.Name</td>
+                <td class="text-center align-middle">
+                    <div class="btn-group">
+                        <a asp-area="Admin" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Sửa</a>
+                        <a asp-area="Admin" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
+                    </div>
+                </td>
+            </tr>
+}
+        </tbody>
+    </table>
+</div>

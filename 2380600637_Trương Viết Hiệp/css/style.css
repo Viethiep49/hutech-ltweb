@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Container */
+#container {
+    width: 960px;
+    margin: auto;
+}
+
+/* Header */
+#header {
+    margin-bottom: 10px;
+}
+
+#header .logo {
+    float: left;
+    width: 200px;
+}
+
+#header .nav {
+    float: right;
+    margin-top: 40px;
+}
+
+#header .nav ul {
+    list-style: none;
+}
+
+#header .nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#header .nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#header .nav ul li a:hover {
+    color: #d23434;
+}
+
+/* Clear */
+.clear {
+    clear: both;
+}
+
+/* Slider */
+#slider {
+    width: 940px;
+    margin: 10px auto;
+}
+
+/* Main Layout */
+#aside {
+    width: 200px;
+    float: left;
+    padding-right: 10px;
+}
+
+#content {
+    width: 720px;
+    float: right;
+}
+
+/* Aside */
+#aside h2 {
+    color: #0a0a0a;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#aside ul {
+    list-style: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 10px 0;
+}
+
+#aside ul li {
+    padding: 5px 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+#aside ul li:last-child {
+    border-bottom: none;
+}
+
+#aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#aside ul li a:hover {
+    color: #d23434;
+}
+
+/* Content */
+.mau_thiet_ke_moi {
+    width: 720px;
+    margin-bottom: 30px;
+}
+
+.san_pham {
+    width: 220px;
+    float: left;
+    margin: 0 10px;
+}
+
+.san_pham h3 {
+    color: #303131;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.san_pham p {
+    color: #787a7b;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+/* Nội thất cao cấp */
+.noi_that_cao_cap {
+    width: 720px;
+    clear: both;
+}
+
+.sp_cao_cap {
+    width: 220px;
+    float: left;
+    margin: 10px;
+}
+
+.sp_cao_cap img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sp_cao_cap h3 {
+    color: #d23434;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.sp_cao_cap p {
+    color: #787a7b;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.sp_cao_cap a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #d23434;
+    padding: 0 15px;
+    float: right;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+/* Footer */
+#footer {
+    clear: both;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.dia_chi {
+    float: left;
+    width: 60%;
+}
+
+.dia_chi p {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.icon {
+    float: right;
+    margin-left: 10px;
+}

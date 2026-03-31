@@ -1,0 +1,40 @@
+@model IEnumerable<_2380600637_TruongVietHiep_Buoi4.Models.CongViec>
+
+@{
+    ViewData["Title"] = "Danh sách công việc";
+}
+
+<div class="container mt-4">
+    <h2>DANH SÁCH CÔNG VIỆC</h2>
+
+    <p>
+        <a asp-action="Create">Tạo mới công việc</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã công việc</th>
+                <th>Tên công việc</th>
+                <th>Trạng thái hoàn thành</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TenCongViec)</td>
+                    <td>
+                        <input type="checkbox" disabled="disabled" @(item.TrangThaiHoanThanh ? "checked" : "") />
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Sửa</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Chi tiết</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Xoá</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

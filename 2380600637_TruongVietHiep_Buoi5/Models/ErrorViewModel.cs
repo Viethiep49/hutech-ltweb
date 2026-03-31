@@ -1,0 +1,8 @@
+namespace _2380600637_TruongVietHiep_Buoi5.Models;
+
+public class ErrorViewModel
+{
+    public string? RequestId { get; set; }
+
+    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+}

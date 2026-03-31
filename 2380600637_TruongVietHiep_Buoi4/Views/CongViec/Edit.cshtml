@@ -1,0 +1,47 @@
+@model _2380600637_TruongVietHiep_Buoi4.Models.CongViec
+
+@{
+    ViewData["Title"] = "Sửa công việc";
+}
+
+<div class="container mt-4">
+    <h2>Sửa công việc</h2>
+    <hr />
+    <div class="row justify-content-center text-start">
+        <div class="col-md-6">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <div class="form-group mb-3">
+                    <label asp-for="Id" class="control-label">Mã công việc</label>
+                    <input asp-for="Id" class="form-control" readonly />
+                    <span asp-validation-for="Id" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label asp-for="TenCongViec" class="control-label">Tên công việc</label>
+                    <input asp-for="TenCongViec" class="form-control" />
+                    <span asp-validation-for="TenCongViec" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="TrangThaiHoanThanh" /> Trạng thái hoàn thành
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Sửa" class="btn btn-primary mt-2 mb-3" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Quay trở lại</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

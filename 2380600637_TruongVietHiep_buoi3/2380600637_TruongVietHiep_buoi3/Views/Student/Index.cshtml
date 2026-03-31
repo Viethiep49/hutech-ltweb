@@ -1,0 +1,21 @@
+﻿@model _2380600637_TruongVietHiep_buoi3.Models.Student
+
+<h2>Đăng ký chuyên ngành</h2>
+
+<form asp-action="ShowKQ" method="post">
+    MSSV: <input type="text" name="MSSV" /><br />
+    Họ tên: <input type="text" name="HoTen" /><br />
+    Điểm TB: <input type="number" step="0.1" name="DiemTB" /><br />
+
+    Chuyên ngành:
+    <select name="ChuyenNganh">
+        <option>CNPM</option>
+        <option>HTTT</option>
+        <option>ANM</option>
+        <option>TTNT</option>
+        <option>MMT</option>
+    </select>
+    <br /><br />
+
+    <button type="submit">Đăng ký</button>
+</form>
