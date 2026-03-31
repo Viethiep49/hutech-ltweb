@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BookWebAPI/BookWebAPI.csproj" />
+  <Project Path="Web API/Web API.csproj" Id="1456f583-ae67-44d2-995d-3d791562ef09" />
+</Solution>

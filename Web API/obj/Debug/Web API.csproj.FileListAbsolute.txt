@@ -1,0 +1,9 @@
+C:\Users\Admin\source\repos\Web API\Web API\bin\Debug\Web API.exe.config
+C:\Users\Admin\source\repos\Web API\Web API\bin\Debug\Web API.exe
+C:\Users\Admin\source\repos\Web API\Web API\bin\Debug\Web API.pdb
+C:\Users\Admin\source\repos\Web API\Web API\obj\Debug\Web API.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Web API\Web API\obj\Debug\Web_API.Properties.Resources.resources
+C:\Users\Admin\source\repos\Web API\Web API\obj\Debug\Web API.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Web API\Web API\obj\Debug\Web API.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Web API\Web API\obj\Debug\Web API.exe
+C:\Users\Admin\source\repos\Web API\Web API\obj\Debug\Web API.pdb
